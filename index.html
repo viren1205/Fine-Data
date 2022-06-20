@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://www.refine.finance/static/media/logo.07862b17.svg"
+        alt=""
+        srcset=""
+      />
+      <ul class="nav__ul">
+        <li>HOME</li>
+        <li>Business</li>
+        <li>Screener</li>
+        <li>Company Analytics</li>
+        <li>Portfolio</li>
+      </ul>
+    </nav>
+    <!-- ======================= -->
+    <div class="green__color__background"></div>
+    <div class="overlap">
+      <div class="company__logo">
+        <i class="fa fa-apple" style="font-size: 36px"></i>
+      </div>
+      <div class="right__container">
+        <div class="company__container">
+          <label class="company__label" for="company__input">Company</label>
+          <input type="text" class="company__input" />
+        </div>
+        <div class="subsidery__container">
+          <label class="subsidery__label" for="subsidery__input"
+            >Subsidery</label
+          >
+          <input type="text" class="subsidery__input" />
+        </div>
+        <div class="subsidery__container">
+          <label class="subsidery__label" for="subsidery__input"
+            >Financials</label
+          >
+          <input type="text" class="subsidery__input" />
+        </div>
+        <button class="company__search">Go</button>
+      </div>
+    </div>
+    <h1 class="company__display__name">Apple (AAPL)</h1>
+
+    <!-- ============================================ -->
+    <div class="third__container">
+      <div class="inner__container">
+        <p>Currency</p>
+        <h3>USD</h3>
+      </div>
+      <div class="inner__container">
+        <p>Industry Segment</p>
+        <h3>Telecommunications</h3>
+      </div>
+      <div class="inner__container">
+        <p>Life Cycle Stage</p>
+        <h3>Growth Stage Company</h3>
+      </div>
+      <div class="inner__container">
+        <p>Cyclicality Status for Company</p>
+        <h3>Cyclical Company</h3>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    <div class="carousel">
+      <ul class="carousel__ul">
+        <li class="default__active">Company Scorecard</li>
+        <li>Valuation</li>
+        <li>Capitalisation</li>
+        <li>Operational Metrics</li>
+        <li>P&L Profile</li>
+        <li>Cash Flow</li>
+        <li>Dividents</li>
+        <li>Managments</li>
+        <li>Company Scorecard</li>
+      </ul>
+    </div>
+    <div class="parent__container">
+      <div class="child__left__container">
+        <div class="same">
+          <div class="span">
+            Stock Price
+            <i
+              class="fa fa-angle-down drop__down__button drop__down__func"
+              style="font-size: 24px"
+            ></i>
+          </div>
+          <div class="card__open">
+            <div id="testingToInject"></div>
+            <div id="testingToInjectTwo"></div>
+            <canvas id="myChart"></canvas>
+            <div class="tabel__container">
+              <div id="columnOne"></div>
+              <div id="columnTwo"></div>
+              <div id="columnThree"></div>
+              <div id="columnFour"></div>
+              <div id="columnFive"></div>
+              <div id="columnSix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="same margin__top__class">
+          <div class="span">
+            Valuation
+            <i
+              class="fa fa-angle-down drop__down__button"
+              style="font-size: 24px"
+            ></i>
+          </div>
+        </div>
+        <div class="same margin__top__class">
+          <div class="span">
+            Company Scorecard
+            <i
+              class="fa fa-angle-down drop__down__button"
+              style="font-size: 24px"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="child__right__container">
+        <div class="right__same">
+          Risk Map
+          <i
+            class="fa fa-angle-down drop__down__button"
+            style="font-size: 24px"
+          ></i>
+        </div>
+        <div class="right__same margin__top__class">
+          Media Coverage
+          <i
+            class="fa fa-angle-down drop__down__button"
+            style="font-size: 24px"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <script src="myscript.js"></script>
+  </body>
+</html>
